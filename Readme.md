@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Владимир Степин](https://up.htmlacademy.ru/htmlcss/23/user/903769).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
