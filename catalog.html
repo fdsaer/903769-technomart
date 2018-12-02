@@ -66,6 +66,54 @@
         <li><a href="#">Перфораторы</a></li>
       </ul>
       <h1>Перфораторы</h1>
+     
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter" method="post" action="">
+          <fieldset>
+            <legend>Производители</legend>
+              <ul class="manufacturer">
+                <li>
+                  <input type="checkbox" name="bosch" id="bosch" checked>
+                  <label for="bosch">bosch</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="interskol" id="interskol">
+                  <label for="interskol">интерскол</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="makita" id="makita" checked>
+                  <label for="makita">makita</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="dewalt" id="dewalt">
+                  <label for="dewalt">dewalt</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="hitachi" id="hitachi">
+                  <label for="hitachi">hitachi</label>
+                </li>                
+              </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание</legend>
+              <ul class="supply-type">
+                <li>
+                  <input type="radio" name="filter-supply" id="filter-battary" value="battary-supply" checked>
+                  <label for="filter-battary">Аккумуляторные</label>
+                </li>
+                <li>
+                  <input type="radio" name="filter-supply" id="filter-wire" value="wired-supply">
+                  <label for="filter-wire">Сетевые</label>
+                </li>                
+              </ul>
+          </fieldset>
+          <button class="button" type="submit">
+            Показать
+          </button>
+        </form>
+      </section>
+     
       <section class="catalog">
         <h2 class="visually-hidden">Каталог</h2>
         <ul class="catalog-list">
@@ -235,6 +283,19 @@
         </p>
       </div>
     </footer>
+    
+    <section class="modal modal-confirmation">
+      <p>
+        Товар добавлен в корзину!
+      </p>
+      <button class="button" type="button">
+        Продолжить покупки
+      </button>
+      <a class="button" href="#">Оформить заказ</a>
+      <button class="modal-button" type="button">
+        Закрыть
+      </button>
+    </section>
     
   </body>
 </html>

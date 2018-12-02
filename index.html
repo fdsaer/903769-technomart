@@ -85,7 +85,7 @@
         <p>
           Вы можете забрать товар сами, заехав в наш офис:
         </p>
-        <a href="#"><img src="img/map-small.jpg" width="300" height="158" alt="Изображение карты"></a>
+        <a href="#"><img src="img/map-small.jpg" width="300" height="158" alt="Изображение адрес на карте"></a>
         <a href="#" class="button about-us">
           Заблудились?Напишите нам!
         </a>
@@ -124,7 +124,7 @@
           Все права защищены
         </p>
         <ul class="footer-social">
-          <li><a href="vk.com"></a>vk</li>
+          <li><a href="vk.com">vk</a></li>
           <li><a href="facebook.com">fb</a></li>
           <li><a href="www.instagram.com">inst</a></li>
         </ul>
@@ -138,6 +138,39 @@
         </p>
       </div>
     </footer>
+    
+    <section class="modal modal-map">
+      <img src="img/modal-map.jpg" width="940" height="446" alt="ул. Большая Конюшенная д.19">
+      <button class="modal-button" type="button">
+        Закрыть
+      </button>
+    </section>
+    
+    <section class="modal modal-contact">
+      <h2 class="visually-hidden">
+        Форма обратной связи
+      </h2>
+      <form class="contact-form" method="post" action="">
+        <p class="contact-item">
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="name" id="name" placeholder="Имя Фамилия" required></input>
+        </p>
+        <p class="contact-item">
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" name="email" id="email" placeholder="email@example.com" required></input>
+        </p>
+        <p class="contact-item">
+          <label for="message">Текст письма:</label>
+          <textarea type="text" name="message" id="message" rows="5" placeholder="В свободной форме" required></textarea>
+        </p>
+        <button class="button" type="submit">
+        Отправить
+        </button>
+      </form>
+      <button class="modal-button" type="button">
+        Закрыть
+      </button>
+    </section>
     
   </body>
 </html>
