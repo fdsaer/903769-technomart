@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   
-    <header class="main-heder">
+    <header class="main-header">
       <div class="main-header-top-line">
         <a href="index.html" class="main-header-logo">
           Техномарт
         </a>
         <form class="contact-form" method="get" action="https://echo.htmlacademy.ru">
-          <input type="text" name="search" id="search" placeholder="поиск"></input>
+          <input type="text" name="search" id="search" placeholder="Поиск:"></input>
           <button class="button visually-hidden" type="submit">
             Искать
           </button>
@@ -44,18 +45,14 @@
             +7(812)555-05-55
           </span>
         </div>
-        <div class="user-avatar">
-          <p class="user-name">
-            Равшан Джамшутович
-          </p>
-          <button class="button button-exit" type="button">
-            Выход
-          </button>
-        </div>
         <ul class="user-menu-list">
-          <li><a href="#">Мои заказы</a></li>
-          <li><a href="#">личный кабинет</a></li>
+          <li><a href="#" class="authorised">Равшан Джамшутович</a></li>
+          <ul class="authorized-list">
+            <li><a href="#">Мои заказы</a></li>
+            <li><a href="#">личный кабинет</a></li>
+          </ul>
         </ul>
+        
       </div>
       <nav class="header-main-menu">
         <ul class="header-menu-list">
@@ -70,13 +67,13 @@
       </nav>
     </header>
     
-    <main>
+    <main class="inner">
       <ul class="breadcrumbs">
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
         <li><a href="#">Перфораторы</a></li>
       </ul>
-      <h1>Перфораторы</h1>
+      <h1 class="page-title" >Перфораторы</h1>
      
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -131,7 +128,7 @@
           <li class="item">
             <h3>
               <a href="#">
-                <span class="item-name">Перфоратор BOSH</span>
+                <span class="item-name">Перфоратор BOSСH</span>
                 <span class="item-type">BFG 3000</span>
               </a>
             </h3>              
@@ -144,12 +141,12 @@
           <li class="item">
             <h3>
               <a href="#">
-                <span class="item-name">Перфоратор BOSH</span>
+                <span class="item-name">Перфоратор BOSСH</span>
                 <span class="item-type">BFG 6000</span>
               </a>
             </h3>              
             <img src="img/snippet-945.jpg" width="144" height="128" alt="Перфоратор BOSH BFG 3000">
-            <p class="item-old-price">
+            <p class="item-price">
               <del>30500 Р.</del>
               <span>25500 Р.</span>
             </p>
@@ -157,12 +154,12 @@
           <li class="item">
             <h3>
               <a href="#">
-                <span class="item-name">Перфоратор BOSH</span>
+                <span class="item-name">Перфоратор BOSСH</span>
                 <span class="item-type">BFG 2000</span>
               </a>
             </h3> 
             <img src="img/snippet-18927.jpg" width="127" height="112" alt="Перфоратор BOSH BFG 3000">
-            <p class="item-old-price">
+            <p class="item-price">
               <del></del>
               <span>12500 Р.</span>
             </p>
@@ -170,12 +167,12 @@
           <li class="item">
             <h3>
               <a href="#">
-                <span class="item-name">Перфоратор BOSH</span>
+                <span class="item-name">Перфоратор BOSСH</span>
                 <span class="item-type">BFG 3000</span>
               </a>
             </h3>              
             <img src="img/snippet-18927.jpg" width="127" height="112" alt="Перфоратор BOSH BFG 3000">
-            <p class="item-old-price">
+            <p class="item-price">
               <del>22500 Р.</del>
               <span>15500 Р.</span>
             </p>
@@ -183,12 +180,12 @@
           <li class="item">
             <h3>
               <a href="#">
-                <span class="item-name">Перфоратор BOSH</span>
+                <span class="item-name">Перфоратор BOSСH</span>
                 <span class="item-type">BFG 6000</span>
               </a>
             </h3> 
             <img src="img/snippet-945.jpg" width="144" height="128" alt="Перфоратор BOSH BFG 3000">
-            <p class="item-old-price">
+            <p class="item-price">
               <del>30500 Р.</del>
               <span>25500 Р.</span>
             </p>
@@ -196,12 +193,12 @@
           <li class="item">
             <h3>
               <a href="#">
-                <span class="item-name">Перфоратор BOSH</span>
+                <span class="item-name">Перфоратор BOSСH</span>
                 <span class="item-type">BFG 2000</span>
               </a>
             </h3>
             <img src="img/snippet-18927.jpg" width="127" height="112" alt="Перфоратор BOSH BFG 3000">
-            <p class="item-old-price">
+            <p class="item-price">
               <del></del>
               <span>12500 Р.</span>
             </p>
@@ -209,12 +206,12 @@
           <li class="item">
             <h3>
               <a href="#">
-                <span class="item-name">Перфоратор BOSH</span>
+                <span class="item-name">Перфоратор BOSСH</span>
                 <span class="item-type">BFG 3000</span>
               </a>
             </h3>
             <img src="img/snippet-18927.jpg" width="127" height="112" alt="Перфоратор BOSH BFG 3000">
-            <p class="item-old-price">
+            <p class="item-price">
               <del>22500 Р.</del>
               <span>12500 Р.</span>
             </p>
@@ -222,12 +219,12 @@
           <li class="item">
             <h3>
               <a href="#">
-                <span class="item-name">Перфоратор BOSH</span>
+                <span class="item-name">Перфоратор BOSСH</span>
                 <span class="item-type">BFG 6000</span>
               </a>
             </h3>
             <img src="img/snippet-945.jpg" width="144" height="128" alt="Перфоратор BOSH BFG 3000">
-            <p class="item-old-price">
+            <p class="item-price">
               <del>30500 Р.</del>
               <span>25500 Р.</span>
             </p>
@@ -235,12 +232,12 @@
           <li class="item">
             <h3>
               <a href="#">
-                <span class="item-name">Перфоратор BOSH</span>
+                <span class="item-name">Перфоратор BOSСH</span>
                 <span class="item-type">BFG 2000</span>
               </a>
             </h3>
             <img src="img/snippet-18927.jpg" width="127" height="112" alt="Перфоратор BOSH BFG 3000">
-            <p class="item-old-price">
+            <p class="item-price">
               <del>30500 Р.</del>
               <span>25500 Р.</span>
             </p>
