@@ -115,9 +115,13 @@ a {
   line-height: 18px;
   color: #ffffff;
   background-color: #293449;
+  
 }
 
 .main-header-logo {
+  display: block;
+  padding: 9px 50px;
+  vertical-align: middle;
   font-size: 24px;
   line-height: 24px;
   color: #ffffff;
@@ -137,6 +141,10 @@ a {
 }
 
 .main-header input {
+  width: 174px;
+  padding: 12px 48px;
+
+  position: relative;
   font: inherit;
   color: #ffffff;
   background-color: transparent;
@@ -164,12 +172,53 @@ a {
 }
 
 .buy-link-list {
+  display: flex;
+  width: 450px;
   margin-left: auto;
+  justify-content: flex-end;
 }
 
 .buy-link-list a {
+  display: block;
+  padding: 12px 20px;
   font-size: 17px;
   line-height: 18px;
+
+}
+
+a.header-bookmark,
+a.header-cart {
+  padding-left: 50px;
+  flex-grow: 1;
+  position: relative;
+}
+
+a.header-bookmark::before {
+  content: "";
+  width: 14px;
+  height: 16px;
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+a.header-cart::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
 }
 
 .buy-link-list a:not(.button):hover {
@@ -257,12 +306,18 @@ a {
 
 
 .header-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+  justify-content: space-around;
   color: #ffffff;
   background-color: #32425c; 
   box-shadow: 0 5px 0 #293449;
 }
 
 .header-main-menu a {
+  display: block;
+  padding: 19px 30px;
   font-size: 17px;
   line-height: 17px;
 }
