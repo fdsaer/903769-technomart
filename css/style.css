@@ -1801,6 +1801,7 @@ section.contacts a.button {
   margin-left: 3px;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 42px;
   height: 42px;
   background-color: #212a3a;
