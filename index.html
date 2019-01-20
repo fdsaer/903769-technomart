@@ -40,7 +40,7 @@
           <p>
             Интернет-магазин
             строительных материалов
-            и инструментров для ремонта
+            и&nbspинструментов для ремонта
           </p>
         </div>
         <div class="contacts">
@@ -294,11 +294,11 @@
           </p>
           <div class="wrapper">
             <ul class="features-selector">
-              <li><button class="active" type="button">Доставка</button></li>
-              <li><button type="button">Гарантия</button></li>
-              <li><button type="button">Кредит</button></li>
+              <li><button class="delivery-switch active" type="button">Доставка</button></li>
+              <li><button class="guarantee-switch" type="button">Гарантия</button></li>
+              <li><button class="credit-switch" type="button">Кредит</button></li>
             </ul>
-            <div class="features-item delivery">
+            <div class="features-item delivery active-slide">
               <h3>Доставка</h3>
               <p>
                 Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!
@@ -348,7 +348,7 @@
           <p>
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
-          <a href="#"><img src="img/map-small.jpg" width="300" height="158" alt="Изображение адрес на карте"></a>
+          <a href="#" class="modal-button-map"><img src="img/map-small.jpg" width="300" height="158" alt="Изображение адрес на карте"></a>
           <a href="#" class="button button-write-us">
             Заблудились? Напишите нам!
           </a>
@@ -421,7 +421,7 @@
     
     <section class="modal modal-map">
       <img src="img/modal-map.jpg" width="940" height="446" alt="ул. Большая Конюшенная д.19">
-      <button class="modal-button" type="button">
+      <button class="modal-button modal-close-button" type="button">
         Закрыть
       </button>
     </section>
@@ -449,10 +449,11 @@
           Отправить
         </button>        
       </form>
-      <button class="modal-button" type="button">
+      <button class="modal-button modal-close-button" type="button">
         Закрыть
       </button>
     </section>
     
+    <script src="js/script.js"></script>
   </body>
 </html>
