@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Cuprum";
   src: 
-    local("Cuprum Regular"), local("Cuprum-Regular"), url(../fonts/cuprum.woff2) format("woff2");
+    local("Cuprum Regular"), local("Cuprum-Regular"), url(../fonts/cuprum.woff2) format("woff2"), url(../fonts/cuprum.woff) format("woff");
   font-style: normal;
   font-weight: normal;
 }
@@ -47,7 +47,7 @@ body {
   color: #000000;
   /*background-color: #ffffff;*/
  /* фон для подгонки ------------------------------------------------------------------------------------*/
-  background-image: url("../maket/technomart/preview/technomart-index.jpg");
+  background-image: url("../../Technomarket/maket/technomart/preview/technomart-index.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
   /*прозрачность для подгонки ----------------------------------------------------------------------------*/
@@ -1207,22 +1207,27 @@ li.promo-card {
 }
 
 .left-side li.promo-card:first-child {
+  background: url("../img/icon-1.svg") no-repeat 213px 31px;
   background-color: #ffbf47;
 }
 
 .left-side li.promo-card:last-child {
+  background: url("../img/icon-2.svg") no-repeat 197px 32px;
   background-color: #3bbce3;
 }
 
 .right-side li.promo-card {
+  background: url("../img/icon-4.svg") no-repeat 196px 26px;
   background-color: #8ed78f;
 }
 
 .right-side li.promo-card:first-child {
+  background: url("../img/icon-3.svg") no-repeat 190px 31px;
   background-color: #dc91d8;
 }
 
 .right-side li.promo-card:last-child {
+  background: url("../img/icon-5.svg") no-repeat 191px 32px;
   background-color: #ffbf47;
 }
 
@@ -1488,8 +1493,10 @@ ul.slider-list {
 
 .features-selector button {
   margin: 0;
-  padding: 13px 10px 18px 22px;
+  padding: 12px 10px 17px 22px;
   border: none;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
   width: 100%;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
@@ -1503,6 +1510,7 @@ ul.slider-list {
 .features-selector button.active {
   color: #32425c;
   background-color: #ffffff;
+  border-color: #ffffff;
 }
 
 .features-selector button:not(.active):hover {
@@ -1551,6 +1559,14 @@ ul.slider-list {
 .features .credit {
   display: none;
   position: relative;
+}
+
+.credit .button {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  width: 175px;
+  text-align: center;
 }
 
 .features .delivery::after {
