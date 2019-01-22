@@ -35,19 +35,46 @@ contactClose.addEventListener("click", function (evt) {
   contactPopup.classList.remove("modal-show");
 })
 
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (contactPopup.classList.contains("modal-show")) {
+      contactPopup.classList.remove("modal-show");
+    }
+  }
+})
+
+var confirmLink = document.querySelectorAll(".buy")
+var confirmPopup = document.querySelector(".modal-confirmation")
+var confirmClose = confirmPopup.querySelector(".modal-close-button")
+
+for (var i = 0; i < confirmLink.length; i++) {
+    confirmLink[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    confirmPopup.classList.add("modal-show");
+  })
+}
+
+confirmClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  confirmPopup.classList.remove("modal-show");
+})
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (confirmPopup.classList.contains("modal-show")) {
+      confirmPopup.classList.remove("modal-show");
+    }
+  }
+})
+
 var guaranteeSwitch = document.querySelector(".guarantee-switch")
 var deliverySwitch = document.querySelector(".delivery-switch")
 var creditSwitch = document.querySelector(".credit-switch")
 var guaranteeSlide = document.querySelector(".guarantee")
 var deliverySlide = document.querySelector(".delivery")
 var creditSlide = document.querySelector(".credit")
-
-/*guaranteeSwitch.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  guaranteeSlide.classList.add("slide-show");
-  deliverySlide.classList.remove("slide-show");
-  guaranteeSlide.classList.remove("slide-show");  
-})*/
 
 guaranteeSwitch.addEventListener("click", function (evt) {
   evt.preventDefault();
